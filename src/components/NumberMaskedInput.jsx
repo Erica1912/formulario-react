@@ -27,7 +27,6 @@ class NumberMaskedInput extends React.Component {
 
     const {value} = props
     this.state = {value}
-
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -49,7 +48,7 @@ class NumberMaskedInput extends React.Component {
    */
   render() {
     return (
-      <label htmlFor={this.props.id}>
+      <label htmlFor={this.props.id} className="label">
         <span>{this.props.label}</span>
         <input id={this.props.id} type="text" value={this.state.value} onChange={this.handleChange}/>
       </label>

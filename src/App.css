@@ -38,17 +38,12 @@
   }
 }
 
-.form{
-    width: 500px;
-    height: 200px;
-    background: #fff;
-    padding: 10px;
-    border: 10px solid #2C3E50;
-    margin:20px;
-    align-content:flex-start;
-}
+
+
+
 
 .label{
   color: #000000;
   font-family: sans-serif;
+  
 }

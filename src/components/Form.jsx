@@ -9,11 +9,18 @@ class Form extends React.Component{
     this.value = props.value;
   }
   render(){
-    return <form className="form" >
-              <TextInput label="Valor: " /><br/>
+    return <form
+            style={{
+              background:'white',
+              margin:'5px',
+              padding:'5rem',
+              width: '500px',
+              height: '200px',
+            }}>
+
+              <NumberMaskedInput label="Valor: " className="label"/><br/>
               <Dropdown /><br/>
-              <TextInput label="TRM: "/><br/>
-              <NumberMaskedInput /><br/>
+              <NumberMaskedInput label="TRM: " className="label"/><br/>
               <SaveButton /><br/>
 
             </form>
