@@ -4,7 +4,7 @@ import React from 'react'
 class SaveButton extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {value: 'hola'};
+    this.state = {value: ''};
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(event) {
