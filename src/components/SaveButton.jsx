@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class SaveButton extends React.Component{
   constructor(props) {
     super(props);
@@ -12,7 +11,7 @@ class SaveButton extends React.Component{
     event.preventDefault();
   }
   render(){
-    return <input type="submit" value="Save" />
+    return <input type="submit" value="Save" className="buttonStyle" />
   }
 
 

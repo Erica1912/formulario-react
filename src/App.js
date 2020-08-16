@@ -3,14 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 
-import Form from './components/Form'
+import Prueba from './components/Prueba'
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Form/>
+        <Prueba/>
       </header>
     </div>
   );

@@ -6,22 +6,9 @@ const mask = value => value ? new Intl.NumberFormat('en').format(value) : ''
 
 const unmask = value => (value || '').replace(new RegExp(',', 'g'), '')
 
-/**
- * NumberMaskedInput component
- * Created by habib on 5/06/2020
- *
- * @public
- * @class
- * @module Generics
- *
- * @author habib
- */
+
 class NumberMaskedInput extends React.Component {
-  /**
-   * Class constructor
-   *
-   * @param {React.ComponentProps} props of the component
-   */
+
   constructor(props) {
     super(props);
 
@@ -30,27 +17,24 @@ class NumberMaskedInput extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  /**
-   * Handle input change
-   * @event onchange
-   * @param {HashChangeEvent} e
-   */
+
   handleChange(e) {
     const {value} = e.target
     const maskedValue = unmask(value)
     this.setState({value: mask(maskedValue)})
   }
 
-  /**
-   * Render class method
-   *
-   * @returns {React.ReactNode}
-   */
+
   render() {
     return (
-      <label htmlFor={this.props.id} className="label">
+      <label htmlFor={this.props.id} >
         <span>{this.props.label}</span>
-        <input id={this.props.id} type="text" value={this.state.value} onChange={this.handleChange}/>
+        <input
+          id={this.props.id}
+          placeholder="Type Number"
+          type="text"          
+          value={this.state.value}
+          onChange={this.handleChange}/>
       </label>
     )
   }
